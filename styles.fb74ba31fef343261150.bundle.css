@@ -1,0 +1,1 @@
+/* You can add global styles to this file, and also import other style files */html{height:95%}body{min-height:100%;display:-ms-grid;display:grid;-ms-grid-rows:1fr auto;grid-template-rows:1fr auto}footer{-ms-grid-row:2;grid-row-start:2;grid-row-end:3}.centered{text-align:center}a:link,a:visited{color:#fe7880;text-decoration:none}

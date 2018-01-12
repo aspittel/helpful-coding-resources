@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+.centered {
+  text-align: center;
+}
+
+.container {
+  font-family: 'Playfair Display', serif;
+  color: #4d4d4d;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+.hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 40px auto 40px;
+  width: 150px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; } to { opacity: 1; }
+}

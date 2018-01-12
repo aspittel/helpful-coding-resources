@@ -1,0 +1,28 @@
+
+<div *ngIf="resources">
+  <div class="search-div">
+    <i
+      class="material-icons"
+      (click)="toggleSearch()"
+    >
+      search
+    </i>
+    <input
+      #searchInput
+      [ngClass]="{'shown': showSearch}"
+      class="search-box"
+      (keyup)="search(searchInput.value)"
+      type="text"
+      placeholder="Filter Resources"
+    />
+  </div>
+  <div class="list">
+    <div class="resource" *ngFor="let resource of resources">
+        <a href="{{ resource.Link }}"><h3>{{ resource.Name }} <span class="author">{{ resource.Author }}</span></h3></a>
+        <p>{{ resource.Description }}</p>
+    </div>
+  </div>
+</div>
+<div *ngIf="!resources">
+  <div class="loader"></div>
+</div>
